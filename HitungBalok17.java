@@ -1,6 +1,17 @@
 import java.util.Scanner;
 
 public class HitungBalok17 {
+
+    static int hitungLuas(int pjg, int lb) {
+        int Luas = pjg * lb;
+        return Luas;
+    }
+
+    static int hitungVolume(int tinggi, int a, int b) {
+        int volume = hitungLuas(a, b) * tinggi;
+        return volume;
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int p, l, t, L, vol;
@@ -14,12 +25,12 @@ public class HitungBalok17 {
         System.out.println("Masukkan tinggi");
         t = input.nextInt();
 
-        L = p * l;
+        L = hitungLuas(p, l);
         System.out.println("Luas persegi panjang adalah " + L);
-        vol = p * l * t;
-        System.out.println("Volume balok adalah " + vol);
 
+        vol = hitungVolume(t, p, l);
+        System.out.println("Volume balok adalah " + vol);
         input.close();
     }
-    
+
 }

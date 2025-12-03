@@ -6,10 +6,10 @@ public class PengunjungCafe17 {
         daftarPengunjung("Doni", "Eti", "Fahmi", "Galih");
     }
 
-    static void daftarPengunjung(String...namaPengunjung) {
+    static void daftarPengunjung(String... namaPengunjung) {
         System.out.println("Daftar Nama Pengunjung: ");
-        for (int i = 0; i < namaPengunjung.length; i++) {
-            System.out.println("- " + namaPengunjung[i]);
+        for (String nama : namaPengunjung) {
+            System.out.println("- " + nama);
         }
     }
 

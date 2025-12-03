@@ -96,4 +96,47 @@
    diletakkan di paling akhir jika memiliki lebih dari satu parameter. Contoh: 
    void contoh(String teks, int...angka) { }
 4. Program tidak error dan tetap berjalan. Output yang dihasilkan hanya "Daftar Nama Pengunjung: "
- 
+
+***Pertanyaan 5***
+1. Sebutkan tahapan dan urutan eksekusi program pada Percobaan 5, mulai dari program dijalankan 
+   hingga menampilkan luas persegi panjang dan volume balok!
+2. Tuliskan output yang dihasilkan program HitungBalokNoAbsen jika pengguna memasukkan panjang = 4, 
+   lebar = 3, dan tinggi = 5. Jelaskan secara singkat alur jalannya program sampai output tersebut muncul.
+3. Apakah output dari program di bawah ini kemudian jelaskan alur jalannya program tersebut!
+4. Pada saat apakah fungsi yang kita buat harus menggunakan parameter atau tidak? Pada saat apakah 
+   fungsi yang kita buat harus memiliki nilai kembalian atau tidak? Jelaskan!
+5. Jelaskan kapan sebuah fungsi sebaiknya menggunakan parameter dan kapan fungsi boleh tanpa 
+   parameter, dengan mengacu pada fungsi hitungLuas dan hitungVolume di Percobaan 5.
+6. Jelaskan kapan sebuah fungsi sebaiknya memiliki nilai kembalian (return value) dan kapan tidak 
+   perlu memiliki nilai kembalian, dengan mengacu pada fungsi main, hitungLuas, dan hitungVolume.
+
+***Jawaban Pertanyaan 5***
+1. - Program dimulai dari fungsi main()
+   - Program akan meminta input panjang, lebar, dan tinggi
+   - Lalu program akan memanggil fungsi hitungLuas()
+   - Selanjutnya program akan memanggil fungsi hitungVolume()
+   - Kemudian fungsi main() akan menampilkan perhitungan hasil luas dan dan volume balok
+   - Program selesai.
+2. Output yang dihasilkan: 
+   Masukkan panjang
+   4
+   Masukkan lebar
+   3
+   Masukkan tinggi
+   5
+   Luas persegi panjang adalah 12
+   Volume balok adalah 60
+   - Pertama program akan masuk ke fungsi main(), kemudian program akan meminta kita untuk 
+     meng-inputkan panjang = 4, lebar = 3, dan tinggi = 5. Setelah selesai input, program akan memanggil fungsi hitungLuas(), dilanjut dengan memanggil fungsi hitungVolume(). Terakhir fungsi main() akan menampilkan perhitungan luas dan volume balok. 
+3. - Fungsi main() memanggil Jumlah(1,1) → menghasilkan 2
+   - Fungsi main() lalu memanggil TampilJumlah(2,5)
+   - TampilJumlah memanggil Jumlah(2,5) → menghasilkan 7
+   - TampilJumlah memanggil TampilHinggaKei(7)
+   - TampilHinggaKei mencetak angka dari 1 sampai 7
+   - Kemudian menghasilkan output 1234567
+4. Fungsi memerlukan parameter ketika fungsi tersebut membutuhkan data yang asalnya dari luar fungsi untuk diolah
+   dalam fungsi. Kita memakai return value saat membutuhkan fungsi yang perlu mengembalikan nilai output, sehingga bisa diolah pada proses berikutnya.
+5. Pada fungsi hitungLuas dan hitungVolume sama-sama menggunakan parameter. Fungsi menggunakan parameter ketika 
+   fungsi membutuhkan data dari luar untuk melakukan proses perhitungan. Fungsi boleh tanpa parameter jika semua data yang dibutuhkan sudah tersedia di dalam fungsi itu sendiri.
+6. Fungsi hitungLuas dan hitungVolume memiliki return value karena nilai luas dan volume diperlukan kembali di main
+   untuk ditampilkan. Sedangkan fungsi main tidak memiliki return value karena hanya mengatur alur program dan tidak menghasilkan nilai yang harus dikembalikan.

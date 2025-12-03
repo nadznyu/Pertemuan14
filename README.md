@@ -59,3 +59,23 @@
 7. Sudah di commit.
 8. Iya, menurut saya lebih mudah menggunakan parameter namaPelanggan dan isMember karena membuat
    program jauh lebih mudah dibaca, dan dapat dikembangkan. Dibandingkan jika nilai-nilai tersebut ditulis langsung di dalam fungsi.
+
+***Pertanyaan 3***
+1. Jelaskan secara singkat kapan suatu fungsi membutuhkan nilai kembalian (return value) dan kapan 
+   fungsi tidak perlu mengembalikan nilai. Berikan minimal satu contoh dari program kafe pada Percobaan 3 untuk masing-masing kasus.
+2. Fungsi hitungTotalHargaNoAbsen saat ini mengembalikan total harga berdasarkan pilihanMenu dan 
+   jumlahPesanan. Sebutkan tipe data nilai kembalian dan dua buah parameter yang digunakan fungsi tersebut. Jelaskan arti masing-masing parameter dalam konteks program kafe.
+3. Modifikasi kode di atas sehingga fungsi hitungTotalHargaNoAbsen dapat menerima kodePromo. Jika 
+   kodePromo adalah "DISKON50", maka mendapat diskon 50% dari totalHarga dan tampilkan diskon. Jika kodePromo adalah "DISKON30", maka mendapat diskon 30% dari totalHarga dan tampilkan diskon. Jika tidak ada kode promo yang berlaku, tampilkan kode invalid dan tidak ada pengurangan total harga totalHarga.
+4. Modifikasi kode di atas sehingga bisa memilih beberapa jenis menu berbeda serta menampilkan total 
+   keseluruhan pesanan. Bagaimana memodifikasi program sehingga pengguna dapat: memesan lebih dari satu jenis menu (misalnya menu 1 dan 3 sekaligus), dan menampilkan total keseluruhan pesanan (gabungan dari semua jenis menu).
+
+***Jawaban Pertanyaan 3***
+1. Fungsi yang memiliki tipe data selain void yang memerlukan return, contoh: 
+   Contoh fungsi return value : fungsi hitungTotalHarga()
+   Contoh fungsi no return value : fungsi Menu()
+2. Masing-masing menggunakan tipe data int : int pilihanMenu, int banyakItem
+   - pilihanMenu : nomor menu yang dipilih oleh pelanggan.
+   - banyakItem : jumlah menu yang dipesan
+3. Sudah di commit.
+4. Sudah di commit.

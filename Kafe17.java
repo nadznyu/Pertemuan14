@@ -30,8 +30,8 @@ public class Kafe17 {
         } else {
             System.out.println("Tidak ada diskon yang diberikan");
         }
-        int totalSetelahdiskon = (int) (hargaTotal - diskon);
-        return totalSetelahdiskon;
+
+        return (int) (hargaTotal - diskon);
 
     }
 
@@ -39,18 +39,32 @@ public class Kafe17 {
         Scanner sc = new Scanner(System.in);
         Menu();
 
-        System.out.print("\nMasukkan nomor menu yang ingin Anda pesan: ");
-        int pilihanMenu = sc.nextInt();
-        System.out.print("Masukkan jumlah item yang ingin dipesan: ");
-        int banyakItem = sc.nextInt();
+        int totalHargaKeseluruhan = 0;
 
-        sc.nextLine();
-        System.out.print("Masukkan kode promo: ");
-        String kodePromo = sc.nextLine();
+        while (true) {
+            System.out.print("\nMasukkan nomor menu yang ingin Anda pesan (1-6): ");
+            int pilihanMenu = sc.nextInt();
+            System.out.print("Masukkan jumlah item yang ingin dipesan: ");
+            int banyakItem = sc.nextInt();
 
-        int totalHarga = hitungTotalHarga(pilihanMenu, banyakItem, kodePromo);
+            sc.nextLine();
+            System.out.print("Masukkan kode promo: ");
+            String kodePromo = sc.nextLine();
 
-        System.out.println("Total harga untuk pesanan Anda: Rp." + totalHarga);
+            int totalHarga = hitungTotalHarga(pilihanMenu, banyakItem, kodePromo);
+
+            System.out.println("Harga untuk menu ini: Rp." + totalHarga);
+            totalHargaKeseluruhan += totalHarga;
+
+            System.out.print("Ingin memesan menu lain (ya/tidak): ");
+            String menuLain = sc.nextLine();
+            if (menuLain.equalsIgnoreCase("tidak")) {
+                break;
+            }
+
+        }
+        System.out.println("\n=========================================");
+        System.out.println("Total keseluruhan pesanan Anda: Rp." + totalHargaKeseluruhan);
 
     }
 

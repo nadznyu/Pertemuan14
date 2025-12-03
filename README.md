@@ -20,3 +20,42 @@
    2. Cappuccino - Rp 20,000
    - Fungsi Menu() selesai dan kembali ke main().
    - Program melanjutkan instruksi berikutnya di dalam main().
+
+***Pertanyaan 2***
+1. Apakah kegunaan parameter di dalam fungsi?
+2. Jelaskan mengapa pada percobaan ini fungsi Menu() menggunakan parameter namaPelanggan dan 
+   isMember?
+3. Apakah parameter sama dengan variabel? Jelaskan.
+4. Jelaskan bagaimana cara kerja parameter isMember pada fungsi Menu(). Apa perbedaan output ketika 
+   isMember bernilai true dan ketika false?
+5. Apa yang akan terjadi jika memanggil fungsi Menu() tanpa menyertakan parameter namaPelanggan dan
+   isMember?
+6. Modifikasi kode di atas dengan menambahkan parameter baru kodePromo (String). Jika kodePromo 
+   adalah "DISKON50", tampilkan berikan diskon 50%. Jika kodePromo adalah "DISKON30", tampilkan berikan diskon 30%. Jika tidak ada kode promo yang berlaku, tampilkan kode invalid.
+7. Berdasarkan fungsi Menu() di atas, jika nama pelanggan adalah "Budi", pelanggan tersebut member, 
+   dan menggunakan kode promo "DISKON30", tuliskan satu baris perintah pemanggilan fungsi menu yang benar.
+8. Menurut Anda, apakah penggunaan parameter namaPelanggan dan isMember pada fungsi Menu() membuat 
+   program lebih mudah dibaca dan dikembangkan dibandingkan jika nilai-nilai tersebut ditulis langsung di dalam fungsi tanpa parameter? Jelaskan alasan Anda.
+
+***Jawaban Pertanyaan 2***
+1. Paramater berperan sebagai tempat untuk data masukan yang akan diolah dalam fungsi.
+2. Parameter namaPelanggan digunakan agar fungsi dapat menampilkan sapaan, dan parameter isMember  
+   (bertipe boolean) digunakan untuk menentukan apakah pelanggan mendapatkan pesan tambahan untuk pemberian diskon. 
+3. Tidak sama, Parameter memang mirip dengan variabel karena sama-sama mempunyai tipe data, punya
+   nama, dan menyimpan nilai. Tetapi parameter itu khusus menerima nilai dari pemanggilan fungsi, 
+   kalau variabel untuk menyimpan data secara umum di dalam program.
+4. - Nilai isMember dikirim dari fungsi main()
+   - Parameter isMember masuk ke dalam fungsi Menu()
+   - Digunakan dalam kondisi if, yang artinya:
+   -> jika isMember bernilai true, maka pesan akan ditampilkan.
+      Selamat datang, Andi!
+      Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!
+   -> jika isMember bernilai false, maka pesan akan dilewati dan tidak ditampilkan (setelah
+      menampilkan namaPelanggan, program akan langsung mengeluarkan daftar Menu).
+      Selamat datang, Sinta!
+5. Program akan error, karena tipe dan jumlah parameter harus cocok, pemanggilan tanpa parameter
+   dianggap tidak valid.
+6. Sudah gabung dengan no.7
+7. Sudah di commit.
+8. Iya, menurut saya lebih mudah menggunakan parameter namaPelanggan dan isMember karena membuat
+   program jauh lebih mudah dibaca, dan dapat dikembangkan. Dibandingkan jika nilai-nilai tersebut ditulis langsung di dalam fungsi.

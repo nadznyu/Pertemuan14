@@ -79,3 +79,21 @@
    - banyakItem : jumlah menu yang dipesan
 3. Sudah di commit.
 4. Sudah di commit.
+
+***Pertanyaan 4***
+1. Jelaskan mengapa penulisan parameter di praktikum 4 ditulis dengan String... namaPengunjung!
+2. Modifikasi method daftarPengunjung menggunakan for-each loop.
+3. Bisakah menggunakan dua tipe data varaargs dalam satu fungsi? Jelaskan jawaban Anda berdasarkan 
+   aturan varargs di Java, dan berikan contohnya!
+4. Jelaskan apa yang terjadi jika fungsi daftarPengunjung dipanggil tanpa argumen. Apakah program 
+   akan error saat kompilasi, error saat dijalankan, atau tetap berjalan? Jika tetap berjalan, bagaimana output yang dihasilkan?
+
+***Jawaban Pertanyaan 4***
+1. Penulisan parameter tersebut disebut dengan Varargs, dalam program kali ini Varargs digunakan agar 
+   fungsi dapat menerima banyak nama tanpa harus menentukan jumlahnya.
+2. Sudah di commit.
+3. Tidak bisa, setiap fungsi hanya boleh menggunakan satu tipe data varargs, dan tipe data varargs 
+   diletakkan di paling akhir jika memiliki lebih dari satu parameter. Contoh: 
+   void contoh(String teks, int...angka) { }
+4. Program tidak error dan tetap berjalan. Output yang dihasilkan hanya "Daftar Nama Pengunjung: "
+ 
